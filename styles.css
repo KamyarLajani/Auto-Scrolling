@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-color: white;
+  
+}
+
+.container {
+    border: 1px solid white;
+    margin: auto;
+    background-color:white;
+    height: 580px;
+    width: 45%;
+    padding: 10px;
+    overflow-y: scroll;
+    
+}
+
+
+.container::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+} 
+ 
+.container::-webkit-scrollbar-thumb {
+    background-color: silver;
+    box-shadow: 0px 0px 2px silver;
+}
+
+.container article {
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 0px 4px silver;
+    margin-bottom: 10px;
+    padding: 5px;
+    
+}
+
+.container article figure {
+    float: left;
+    margin: 10px;
+    margin-top: 0px;
+    
+}
+.container article figure img {
+    width: 80px;
+    height: 80px;
+}
+
+.container article header h2 {
+    font-weight: normal;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.container article p {
+    margin: 0px;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 95%;
+    }
+}
